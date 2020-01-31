@@ -45,7 +45,3 @@
         props: ["pageTitle"]
     }
 </script>
-
-<style scoped>
-
-</style>
