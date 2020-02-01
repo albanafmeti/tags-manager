@@ -35,7 +35,3 @@
         props: ["title", "subtitle", "onClose"]
     }
 </script>
-
-<style scoped>
-
-</style>
