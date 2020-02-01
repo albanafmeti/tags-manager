@@ -16,19 +16,12 @@
 
             <div class="input-color">
 
-                <div class="color-row">
-                    <div class="color" v-for="item in colorsGroup1" :style="{'background': item }"
+                <div class="color-row" v-for="group in colors">
+                    <div class="color" v-for="item in group" :style="{'background': item }"
                          @click="selectColor(item)">
                         <i class="fa fa-check" v-if="color === item"></i>
                     </div>
 
-                </div>
-
-                <div class="color-row">
-                    <div class="color" v-for="item in colorsGroup2" :style="{'background': item }"
-                         @click="selectColor(item)">
-                        <i class="fa fa-check" v-if="color === item"></i>
-                    </div>
                 </div>
 
             </div>
@@ -55,25 +48,27 @@
                     color: null
                 },
 
-                colorsGroup1: [
-                    "#B8E75A",
-                    "#44AF68",
-                    "#3398DB",
-                    "#0D638C",
-                    "#E75ADC",
-                    "#8E36EB",
-                    "#FFEA00",
-                    "#EBBE36",
-                ],
-                colorsGroup2: [
-                    "#F39C19",
-                    "#EB6236",
-                    "#E84B3C",
-                    "#C0382B",
-                    "#3F312B",
-                    "#A9B4B7",
-                    "#838A8C",
-                    "#2B3B3F",
+                colors: [
+                    [
+                        "#B8E75A",
+                        "#44AF68",
+                        "#3398DB",
+                        "#0D638C",
+                        "#E75ADC",
+                        "#8E36EB",
+                        "#FFEA00",
+                        "#EBBE36",
+                    ],
+                    [
+                        "#F39C19",
+                        "#EB6236",
+                        "#E84B3C",
+                        "#C0382B",
+                        "#3F312B",
+                        "#A9B4B7",
+                        "#838A8C",
+                        "#2B3B3F",
+                    ]
                 ]
             }
         },
